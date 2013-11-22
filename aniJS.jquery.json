@@ -1,0 +1,34 @@
+{
+    "name": "aniJS",
+    "title": "jQuery aniJS",
+    "description": "A image sprite sheet jquery animation plugin",
+    "keywords": [
+        "sprite",
+        "sheet",
+        "animation"
+    ],
+    "version": "1.0",
+    "author": {
+        "name": "Rijad Dizdarevic",
+        "url": "http://rijaddizdarevic.com/"
+    },
+    "maintainers": [
+        {
+            "name": "Rijad Dizdarevic",
+            "url": "http://rijaddizdarevic.com/"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": ""
+        }
+    ],
+    "bugs": "https://github.com/ryuutatsuo88/aniJS/issues",
+    "homepage": "https://github.com/ryuutatsuo88/aniJS",
+    "docs": "https://github.com/ryuutatsuo88/aniJS",
+    "download": "https://github.com/ryuutatsuo88/aniJS",
+    "dependencies": {
+        "jquery": ">=1.8.2"
+    }
+}
