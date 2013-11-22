@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>AniJS</title>
+		
+		<script type="text/javascript" src="js/jquery.min.js"></script>	
+		<script type="text/javascript" src="js/anijs.js"></script>	
+		<script type="text/javascript">			
+		$(document).ready(function () {	
+			$('.anim').anijs({
+				image: "1.png", 
+				fps: 20, 
+				frameWidth: 150, 
+				frameHeight: 150,
+				isReady : function ($this) {}
+			});
+			
+			$('.mega').anijs({
+				image: "2.jpg", 
+				fps: 8, 
+				frameWidth: 64, 
+				frameHeight: 64,
+				isReady : function ($this) {}
+			});
+			
+			$(".start").click(function () {
+				$('#1').anijs("enable");
+			});
+			
+			$(".stop").click(function () {
+				$('#1').anijs("disable");
+			});
+			$(".destroy").click(function () {
+				$('.imgAnimate-identifier').anijs("destroy");
+			});
+		});	
+		</script>
+	</head>
+	<body>
+		<div id="1" class="anim"></div>
+		<button class="start">start</button>
+		<button class="stop">stop</button>
+		<button class="destroy">destroy</button>
+		<div id="2" class="mega"></div>
+	</body>
+</html>
